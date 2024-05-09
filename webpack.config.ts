@@ -18,10 +18,16 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              additionalData: `@import "${path.resolve(
+              additionalData: `
+              @import "${path.resolve(
                 __dirname,
                 "/assets/style/variables/color.scss"
-              )}";`,
+              )}";
+              @import "${path.resolve(
+                __dirname,
+                "/assets/style/variables/font-weight.scss"
+              )}";
+              `,
             },
           },
         ],
