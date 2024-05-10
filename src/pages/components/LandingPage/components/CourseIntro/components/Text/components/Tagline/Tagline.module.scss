@@ -1,0 +1,23 @@
+.container {
+  margin-bottom: 15px;
+
+  .tagline {
+    color: var(--second-text);
+    font-size: 4.8em;
+    font-weight: var(--medium);
+  }
+
+  .bad_instance {
+    color: var(--red);
+    font-size: 5.8em;
+    font-weight: var(--bold);
+    text-decoration: line-through;
+  }
+
+  .good_instance {
+    color: var(--green);
+    font-size: 5.8em;
+    font-weight: var(--bold);
+    text-decoration: underline;
+  }
+}
