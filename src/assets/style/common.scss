@@ -3,6 +3,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 8px;
+  line-height: 30px;
 
   @include mediaQuery("xxxl") {
     font-size: 7px;
