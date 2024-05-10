@@ -1,0 +1,18 @@
+import React from "react";
+import { Grid } from "@mui/material";
+
+export const CourseIntroVideo = () => {
+  return (
+    <Grid item xs={1} color="#fff">
+      <img
+        style={{
+          objectFit: "cover",
+          width: "100%",
+          height: "100%",
+          borderRadius: 100,
+        }}
+        src="https://i.vimeocdn.com/video/1780877222-d4335ca88675b451f520615fe3bbcf7b6158f4b9b9ab31c36a8aaab02d4a3a09-d?mw=2800&mh=1575&q=70%22"
+      />
+    </Grid>
+  );
+};
