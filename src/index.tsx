@@ -1,15 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
+import { AppRoutes } from "./pages/AppRoutes";
+
+import "./assets/style/variables/color.scss";
+import "./assets/style/variables/font-weight.scss";
+
+import "./assets/style/mixin/media.scss";
+
+import "./assets/style/reset.scss";
+import "./assets/style/common.scss";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <AppRoutes />
   </React.StrictMode>
 );
 

@@ -1,0 +1,14 @@
+@import "./mixin/media.scss";
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+
+  @include mediaQuery("xxxl") {
+    font-size: 7px;
+  }
+
+  @include mediaQuery("xxl") {
+    font-size: 6px;
+  }
+}
