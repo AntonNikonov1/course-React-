@@ -1,9 +1,14 @@
-.title {
-  color: var(--inversion);
-  font-size: 6.1em;
-  font-weight: var(--bold);
-}
-.description {
-  color: var(--inversion);
-  font-size: 1.8em;
+.container {
+  text-align: start;
+  .title {
+    color: var(--inversion);
+    font-size: 6.1em;
+    font-weight: var(--bold);
+    text-align: start;
+  }
+  .description {
+    color: var(--inversion);
+    font-size: 1.8em;
+    text-align: start;
+  }
 }

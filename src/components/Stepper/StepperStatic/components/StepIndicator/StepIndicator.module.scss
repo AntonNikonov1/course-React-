@@ -1,0 +1,11 @@
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--inversion);
+  font-size: 1.6em;
+  width: 44px;
+  height: 44px;
+  background-color: var(--blue);
+  border-radius: 50%;
+}
