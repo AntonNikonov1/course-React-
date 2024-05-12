@@ -1,0 +1,44 @@
+.step_container {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+
+  .label_root_container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .label_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+
+    .icon {
+      width: 25%;
+      font-size: 200px;
+      path {
+        fill: var(--inversion);
+      }
+    }
+
+    .label_content_container {
+      width: 65%;
+
+      .title {
+        color: var(--inversion);
+        font-size: 6.1em;
+        font-weight: var(--bold);
+        line-height: normal;
+        text-align: start;
+        margin-top: -15px;
+        margin-left: -5px;
+      }
+      .description {
+        color: var(--inversion);
+        font-size: 1.8em;
+        text-align: start;
+      }
+    }
+  }
+}
