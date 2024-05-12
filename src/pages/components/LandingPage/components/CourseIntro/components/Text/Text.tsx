@@ -8,19 +8,21 @@ import { ButtonComponent } from "components/Button/Button";
 
 export const CourseIntroText = () => {
   return (
-    <Grid className={classes.container} item xs={2}>
-      <CourseIntroTextHeader />
-      <CourseIntroTextName />
-      <CourseIntroTextTagline />
-      <p className={classes.description}>
-        This course focuses on developing a deep understanding of React through
-        building complex projects. You'll not only master React but also learn
-        how to integrate it with other technologies. These in-depth skills and
-        practical experience will help you excel in interviews and stand out
-        from other candidates.
-      </p>
+    <div className={classes.container}>
+      <div>
+        <CourseIntroTextHeader />
+        <CourseIntroTextName />
+        <CourseIntroTextTagline />
+        <p className={classes.description}>
+          This course focuses on developing a deep understanding of React
+          through building complex projects. You'll not only master React but
+          also learn how to integrate it with other technologies. These in-depth
+          skills and practical experience will help you excel in interviews and
+          stand out from other candidates.
+        </p>
+      </div>
 
-      <Grid container columns={2} marginTop="65px" columnSpacing={2}>
+      <Grid container columns={2} columnSpacing={2}>
         <Grid item xs={1}>
           <ButtonComponent ui="primary">More about tariffs</ButtonComponent>
         </Grid>
@@ -28,6 +30,6 @@ export const CourseIntroText = () => {
           <ButtonComponent>Modules and Lessons</ButtonComponent>
         </Grid>
       </Grid>
-    </Grid>
+    </div>
   );
 };

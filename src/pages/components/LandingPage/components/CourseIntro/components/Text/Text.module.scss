@@ -1,4 +1,8 @@
 .container {
+  display: flex;
+  flex: 1.5;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   background-color: var(--second-bg);
   border-radius: 75px;
