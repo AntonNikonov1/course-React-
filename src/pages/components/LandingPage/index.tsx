@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./style.module.scss";
 import { CourseIntro } from "./components/CourseIntro/CourseIntro";
 import { CourseBenefits } from "./components/CourseBenefits/CourseBenefits";
+import { CourseCustomerFit } from "./components/CourseCustomerFit/CourseCustomerFit";
 
 export const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ export const LandingPage = () => {
       <div className={classes.content}>
         <CourseIntro />
         <CourseBenefits />
+        <CourseCustomerFit />
       </div>
     </div>
   );
