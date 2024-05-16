@@ -17,3 +17,14 @@ body {
 * {
   position: relative;
 }
+
+.highlighted_text {
+  display: inline-block;
+  color: var(--blue);
+  font-size: 7.4em;
+  font-weight: var(--bold);
+  line-height: normal;
+  background-color: rgba(var(--blue-rgb), 0.5);
+  border-radius: 10px;
+  padding: 5px;
+}
