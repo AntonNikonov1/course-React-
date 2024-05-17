@@ -12,6 +12,7 @@ export const ButtonComponent = ({
 }: ButtonComponentProps) => {
   return (
     <Button
+      disableRipple
       className={classNames(
         className,
         classes.button,
