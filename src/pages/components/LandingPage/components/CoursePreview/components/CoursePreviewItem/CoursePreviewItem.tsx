@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./CoursePreviewItem.module.scss";
 import { CoursePreviewLessonButton } from "./components/LessonButton/LessonButton";
+import { ExamButton } from "./components/ExamButton/ExamButton";
 
 export const CoursePreviewItem = () => {
   return (
@@ -17,16 +18,20 @@ export const CoursePreviewItem = () => {
             borderRadius: "40px",
           }}
         />
-        <div style={{ flex: 0.4 }}>
-          <CoursePreviewLessonButton isFocused={false}>
-            What is React and why I need use it?
-          </CoursePreviewLessonButton>
-          <CoursePreviewLessonButton isFocused={true}>
-            What is React and why I need use it?
-          </CoursePreviewLessonButton>
-          <CoursePreviewLessonButton isFocused={false}>
-            What is React and why I need use it?
-          </CoursePreviewLessonButton>
+        <div className={classes.lesson_navigation}>
+          <div>
+            <CoursePreviewLessonButton isFocused={false}>
+              What is React and why I need use it?
+            </CoursePreviewLessonButton>
+            <CoursePreviewLessonButton isFocused={true}>
+              What is React and why I need use it?
+            </CoursePreviewLessonButton>
+            <CoursePreviewLessonButton isFocused={false}>
+              What is React and why I need use it?
+            </CoursePreviewLessonButton>
+          </div>
+
+          <ExamButton />
         </div>
       </div>
     </div>

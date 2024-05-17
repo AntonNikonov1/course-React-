@@ -25,5 +25,12 @@
     width: 100%;
     margin-top: 100px;
     gap: 40px;
+
+    .lesson_navigation {
+      display: flex;
+      flex: 0.4;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
