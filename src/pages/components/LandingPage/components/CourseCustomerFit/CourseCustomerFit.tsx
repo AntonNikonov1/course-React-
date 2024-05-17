@@ -5,7 +5,7 @@ import { courseCustomerFitSetup } from "./utils";
 
 export const CourseCustomerFit = () => {
   return (
-    <div style={{ paddingBottom: "1000px" }} className={classes.container}>
+    <div className={classes.container}>
       {courseCustomerFitSetup.map((item, index) => (
         <CourseCustomerFitItem key={index} {...item} />
       ))}

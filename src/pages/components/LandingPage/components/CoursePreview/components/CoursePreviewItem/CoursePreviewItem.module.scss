@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-text);
+  border-radius: 50px;
+  padding: 65px;
+
+  .module_mark {
+    font-size: 1.8em;
+    color: var(--inversion);
+    background-color: var(--main-bg);
+    border-radius: 20px;
+    padding: 0 30px;
+    margin-bottom: 40px;
+  }
+
+  .lesson_name {
+    font-size: 6em;
+    font-weight: var(--semi-bold);
+  }
+
+  .lesson_container {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    gap: 40px;
+  }
+}

@@ -3,6 +3,7 @@ import classes from "./style.module.scss";
 import { CourseIntro } from "./components/CourseIntro/CourseIntro";
 import { CourseBenefits } from "./components/CourseBenefits/CourseBenefits";
 import { CourseCustomerFit } from "./components/CourseCustomerFit/CourseCustomerFit";
+import { CoursePreview } from "./components/CoursePreview/CoursePreview";
 
 export const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ export const LandingPage = () => {
         <CourseIntro />
         <CourseBenefits />
         <CourseCustomerFit />
+        <CoursePreview />
       </div>
     </div>
   );

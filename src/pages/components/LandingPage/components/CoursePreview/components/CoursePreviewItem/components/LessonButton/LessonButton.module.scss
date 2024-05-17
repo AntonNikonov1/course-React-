@@ -1,0 +1,15 @@
+.container {
+  font-weight: var(--semi-bold);
+  background: transparent !important;
+  border: 2px solid var(--main-bg) !important;
+  margin-bottom: 10px !important;
+  border-radius: 30px !important;
+  justify-content: flex-start !important;
+  padding: 10px !important;
+
+  &.focused {
+    color: var(--inversion) !important;
+    background: var(--blue) !important;
+    border: none !important;
+  }
+}
