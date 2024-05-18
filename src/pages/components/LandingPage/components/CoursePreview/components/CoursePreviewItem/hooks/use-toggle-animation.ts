@@ -1,6 +1,9 @@
 import { useAnimate } from "framer-motion";
 import { useEffect } from "react";
-import { GetCoursePreviewItemId } from "../utils";
+import {
+  COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION,
+  GetCoursePreviewItemId,
+} from "../utils";
 
 export const useCoursePreviewItemToggleAnimation = (
   isOpened: boolean,
@@ -11,7 +14,10 @@ export const useCoursePreviewItemToggleAnimation = (
   const getCoursePreviewItemId = new GetCoursePreviewItemId(itemIndex);
 
   useEffect(() => {
-    const animationSetup = { duration: 0.25, at: 0 };
+    const animationSetup = {
+      duration: COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION / 1000,
+      at: 0,
+    };
 
     animate([
       [

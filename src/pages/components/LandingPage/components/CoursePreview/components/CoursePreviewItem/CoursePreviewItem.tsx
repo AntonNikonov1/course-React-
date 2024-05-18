@@ -1,14 +1,14 @@
 import React from "react";
 import classes from "./CoursePreviewItem.module.scss";
 import { CoursePreviewItemProps } from "./CoursePreviewItem.interface";
-import { LessonNavigation } from "./components/LessonNavigation/LessonNavigation";
-import { ArrowTopIcon } from "components/Icons/ArrowTopIcon";
+import { CoursePreviewItemLessonNavigation } from "./components/LessonNavigation/LessonNavigation";
 import { CoursePreviewItemContext } from "./CoursePreviewItem.context";
 import { useCoursePreviewItemToggleAnimation } from "./hooks/use-toggle-animation";
 import { GetCoursePreviewItemId } from "./utils";
+import { CoursePreviewItemLessonName } from "./components/LessonName/LessonName";
 
 export const CoursePreviewItem = (props: CoursePreviewItemProps) => {
-  const { isOpened, itemIndex, openCoursePreviewItem } = props;
+  const { isOpened, itemIndex } = props;
 
   const { containerRef } = useCoursePreviewItemToggleAnimation(
     isOpened,
@@ -18,7 +18,7 @@ export const CoursePreviewItem = (props: CoursePreviewItemProps) => {
   const getCoursePreviewItemId = new GetCoursePreviewItemId(itemIndex);
 
   return (
-    <CoursePreviewItemContext.Provider value={props}>
+    <CoursePreviewItemContext.Provider value={{ ...props, containerRef }}>
       <div ref={containerRef} className={classes.container}>
         <div
           id={getCoursePreviewItemId.moduleMarkId}
@@ -27,20 +27,7 @@ export const CoursePreviewItem = (props: CoursePreviewItemProps) => {
           1 Module
         </div>
 
-        <div className={classes.lesson_name_container}>
-          <div
-            id={getCoursePreviewItemId.lessonNameId}
-            className={classes.lesson_name}
-          >
-            01 / Getting Started
-          </div>
-
-          <ArrowTopIcon
-            id={getCoursePreviewItemId.expandIconId}
-            className={classes.expand_icon}
-            onClick={() => openCoursePreviewItem(itemIndex)}
-          />
-        </div>
+        <CoursePreviewItemLessonName />
 
         <div
           id={getCoursePreviewItemId.lessonNavigationContainerId}
@@ -55,7 +42,7 @@ export const CoursePreviewItem = (props: CoursePreviewItemProps) => {
             }}
           />
 
-          <LessonNavigation />
+          <CoursePreviewItemLessonNavigation />
         </div>
       </div>
     </CoursePreviewItemContext.Provider>

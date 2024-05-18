@@ -4,7 +4,7 @@ import { CoursePreviewLessonButton } from "../Buttons/LessonButton/LessonButton"
 import { ExamButton } from "../Buttons/ExamButton/ExamButton";
 import { CloseModuleButton } from "../Buttons/CloseModuleButton/CloseModuleButton";
 
-export const LessonNavigation = () => {
+export const CoursePreviewItemLessonNavigation = () => {
   return (
     <div className={classes.navigation}>
       <div>

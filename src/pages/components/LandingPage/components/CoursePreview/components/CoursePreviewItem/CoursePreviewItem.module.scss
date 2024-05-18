@@ -16,27 +16,6 @@
     margin-bottom: 40px;
   }
 
-  .lesson_name_container {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 40px;
-
-    .expand_icon {
-      width: 48px;
-      cursor: pointer;
-      margin-left: auto;
-    }
-
-    .lesson_name {
-      position: absolute;
-      top: 0;
-      font-size: 6em;
-      font-weight: var(--semi-bold);
-      margin-right: auto;
-    }
-  }
-
   .lesson_container {
     display: flex;
     width: 100%;

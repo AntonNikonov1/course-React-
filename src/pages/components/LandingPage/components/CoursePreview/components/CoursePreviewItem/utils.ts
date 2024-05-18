@@ -13,3 +13,5 @@ export class GetCoursePreviewItemId {
     this.lessonNavigationContainerId = `CoursePreviewItemLessonContainer${this.itemIndex}`;
   }
 }
+
+export const COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION = 250;
