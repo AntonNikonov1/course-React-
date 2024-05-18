@@ -1,12 +1,12 @@
 import React from "react";
 import classes from "./ExamButton.module.scss";
 import { ButtonComponent } from "components/Button/Button";
-import { LibraryBooks, QuizOutlined } from "@mui/icons-material";
+import { BooksIcon } from "components/Icons/BooksIcon";
 
 export const ExamButton = () => {
   return (
-    <ButtonComponent className={classes.container}>
-      <LibraryBooks color="primary" />
+    <ButtonComponent className={classes.button}>
+      <BooksIcon className={classes.icon} />
       Exam
     </ButtonComponent>
   );
