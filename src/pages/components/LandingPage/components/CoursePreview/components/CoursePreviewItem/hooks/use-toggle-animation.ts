@@ -1,5 +1,6 @@
 import { useAnimate } from "framer-motion";
 import { useEffect } from "react";
+import { GetCoursePreviewItemId } from "../utils";
 
 export const useCoursePreviewItemToggleAnimation = (
   isOpened: boolean,
@@ -7,18 +8,16 @@ export const useCoursePreviewItemToggleAnimation = (
 ) => {
   const [containerRef, animate] = useAnimate();
 
-  const moduleMarkId = `CoursePreviewItemModuleMark${itemIndex}`;
-  const lessonNameId = `CoursePreviewItemContainer${itemIndex}`;
-  const expandIconId = `CoursePreviewItemExpandIconId${itemIndex}`;
-  const lessonNavigationContainerId = `CoursePreviewItemLessonContainer${itemIndex}`;
+  const getCoursePreviewItemId = new GetCoursePreviewItemId(itemIndex);
 
   useEffect(() => {
     const animationSetup = { duration: 0.25, at: 0 };
 
     animate([
       [
-        `#${moduleMarkId}`,
+        `#${getCoursePreviewItemId.moduleMarkId}`,
         {
+          opacity: isOpened ? 1 : 0,
           transform: isOpened ? "scale(1)" : "scale(0)",
           padding: isOpened ? "0 30px" : "0",
           marginBottom: isOpened ? "40px" : "0",
@@ -26,7 +25,7 @@ export const useCoursePreviewItemToggleAnimation = (
         animationSetup,
       ],
       [
-        `#${lessonNavigationContainerId}`,
+        `#${getCoursePreviewItemId.lessonNavigationContainerId}`,
         {
           height: isOpened ? "500px" : "0",
           marginTop: isOpened ? "100px" : "0",
@@ -35,7 +34,7 @@ export const useCoursePreviewItemToggleAnimation = (
         animationSetup,
       ],
       [
-        `#${lessonNameId}`,
+        `#${getCoursePreviewItemId.lessonNameId}`,
         {
           transform: isOpened ? "translateX(-50%)" : "translateX(0)",
           left: isOpened ? "50%" : "0",
@@ -43,7 +42,7 @@ export const useCoursePreviewItemToggleAnimation = (
         animationSetup,
       ],
       [
-        `#${expandIconId}`,
+        `#${getCoursePreviewItemId.expandIconId}`,
         {
           opacity: isOpened ? 0 : 1,
           height: isOpened ? "0px" : "auto",
@@ -53,11 +52,5 @@ export const useCoursePreviewItemToggleAnimation = (
     ]);
   }, [isOpened]);
 
-  return {
-    containerRef,
-    moduleMarkId,
-    lessonNameId,
-    expandIconId,
-    lessonNavigationContainerId,
-  };
+  return { containerRef };
 };
