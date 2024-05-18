@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./CoursePreviewItem.module.scss";
 import { CoursePreviewLessonButton } from "./components/LessonButton/LessonButton";
 import { ExamButton } from "./components/ExamButton/ExamButton";
+import { CloseModuleButton } from "./components/CloseModuleButton/CloseModuleButton";
 
 export const CoursePreviewItem = () => {
   return (
@@ -31,7 +32,10 @@ export const CoursePreviewItem = () => {
             </CoursePreviewLessonButton>
           </div>
 
-          <ExamButton />
+          <div className={classes.lesson_button_navigation}>
+            <ExamButton />
+            <CloseModuleButton />
+          </div>
         </div>
       </div>
     </div>
