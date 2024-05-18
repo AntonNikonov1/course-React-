@@ -1,0 +1,12 @@
+.navigation {
+  display: flex;
+  flex: 0.4;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .button_navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}

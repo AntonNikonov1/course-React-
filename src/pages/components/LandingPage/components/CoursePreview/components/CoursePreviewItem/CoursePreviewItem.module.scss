@@ -5,6 +5,7 @@
   background-color: var(--main-text);
   border-radius: 50px;
   padding: 65px;
+  margin-bottom: 50px;
 
   .module_mark {
     font-size: 1.8em;
@@ -15,28 +16,31 @@
     margin-bottom: 40px;
   }
 
-  .lesson_name {
-    font-size: 6em;
-    font-weight: var(--semi-bold);
+  .lesson_name_container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40px;
+
+    .expand_icon {
+      width: 48px;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    .lesson_name {
+      position: absolute;
+      top: 0;
+      font-size: 6em;
+      font-weight: var(--semi-bold);
+      margin-right: auto;
+    }
   }
 
   .lesson_container {
     display: flex;
     width: 100%;
-    margin-top: 100px;
     gap: 40px;
-
-    .lesson_navigation {
-      display: flex;
-      flex: 0.4;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .lesson_button_navigation {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-      }
-    }
+    overflow: hidden;
   }
 }

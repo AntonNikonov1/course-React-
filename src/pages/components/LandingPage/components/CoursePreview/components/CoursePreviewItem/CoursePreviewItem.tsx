@@ -1,43 +1,57 @@
 import React from "react";
 import classes from "./CoursePreviewItem.module.scss";
-import { CoursePreviewLessonButton } from "./components/LessonButton/LessonButton";
-import { ExamButton } from "./components/ExamButton/ExamButton";
-import { CloseModuleButton } from "./components/CloseModuleButton/CloseModuleButton";
+import { CoursePreviewItemProps } from "./CoursePreviewItem.interface";
+import { LessonNavigation } from "./components/LessonNavigation/LessonNavigation";
+import { ArrowTopIcon } from "components/Icons/ArrowTopIcon";
+import { CoursePreviewItemContext } from "./CoursePreviewItem.context";
+import { useCoursePreviewItemToggleAnimation } from "./hooks/use-toggle-animation";
 
-export const CoursePreviewItem = () => {
+export const CoursePreviewItem = (props: CoursePreviewItemProps) => {
+  const { isOpened, itemIndex, openCoursePreviewItem } = props;
+
+  const {
+    containerRef,
+    moduleMarkId,
+    lessonNameId,
+    expandIconId,
+    lessonNavigationContainerId,
+  } = useCoursePreviewItemToggleAnimation(isOpened, itemIndex);
+
   return (
-    <div className={classes.container}>
-      <div className={classes.module_mark}>1 Module</div>
-      <div className={classes.lesson_name}>01 / Getting Started</div>
+    <CoursePreviewItemContext.Provider value={props}>
+      <div ref={containerRef} className={classes.container}>
+        <div id={moduleMarkId} className={classes.module_mark}>
+          1 Module
+        </div>
 
-      <div className={classes.lesson_container}>
+        <div className={classes.lesson_name_container}>
+          <div id={lessonNameId} className={classes.lesson_name}>
+            01 / Getting Started
+          </div>
+
+          <ArrowTopIcon
+            id={expandIconId}
+            className={classes.expand_icon}
+            onClick={() => openCoursePreviewItem(itemIndex)}
+          />
+        </div>
+
         <div
-          style={{
-            background: "grey",
-            flex: 0.6,
-            height: "500px",
-            borderRadius: "40px",
-          }}
-        />
-        <div className={classes.lesson_navigation}>
-          <div>
-            <CoursePreviewLessonButton isFocused={false}>
-              What is React and why I need use it?
-            </CoursePreviewLessonButton>
-            <CoursePreviewLessonButton isFocused={true}>
-              What is React and why I need use it?
-            </CoursePreviewLessonButton>
-            <CoursePreviewLessonButton isFocused={false}>
-              What is React and why I need use it?
-            </CoursePreviewLessonButton>
-          </div>
+          id={lessonNavigationContainerId}
+          className={classes.lesson_container}
+        >
+          <div
+            style={{
+              background: "grey",
+              flex: 0.6,
+              height: "500px",
+              borderRadius: "40px",
+            }}
+          />
 
-          <div className={classes.lesson_button_navigation}>
-            <ExamButton />
-            <CloseModuleButton />
-          </div>
+          <LessonNavigation />
         </div>
       </div>
-    </div>
+    </CoursePreviewItemContext.Provider>
   );
 };
