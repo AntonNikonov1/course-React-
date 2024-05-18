@@ -1,6 +1,6 @@
 import { ButtonProps } from "@mui/material";
 
 export interface ButtonComponentProps extends Omit<ButtonProps, "size"> {
-  ui?: "primary";
+  ui?: "primary" | "outline";
   size?: "xl";
 }

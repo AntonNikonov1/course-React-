@@ -20,3 +20,8 @@
   color: var(--inversion) !important;
   background: var(--blue) !important;
 }
+
+.outline {
+  background: transparent !important;
+  border: 2px solid var(--main-bg) !important;
+}
