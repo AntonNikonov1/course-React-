@@ -10,6 +10,8 @@ export const CoursePreviewItemContext =
   createContext<CoursePreviewItemContextProps>({
     itemIndex: 0,
     isOpened: false,
+    lessonName: "",
+    totalNumberModuleTimeInHour: 0,
     closeCoursePreviewItem: () => null,
     openCoursePreviewItem: () => null,
     containerRef: null,

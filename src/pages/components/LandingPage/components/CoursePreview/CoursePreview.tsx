@@ -23,6 +23,8 @@ export const CoursePreview = () => {
         <CoursePreviewItem
           key="0"
           itemIndex={0}
+          lessonName="01 / Getting Started"
+          totalNumberModuleTimeInHour={1.5}
           isOpened={openedCourseIndex === 0}
           closeCoursePreviewItem={closeCoursePreviewItem}
           openCoursePreviewItem={openCoursePreviewItem}
@@ -30,6 +32,8 @@ export const CoursePreview = () => {
         <CoursePreviewItem
           key="1"
           itemIndex={1}
+          lessonName="02 / React vs Vanilla JS"
+          totalNumberModuleTimeInHour={1.25}
           isOpened={openedCourseIndex === 1}
           closeCoursePreviewItem={closeCoursePreviewItem}
           openCoursePreviewItem={openCoursePreviewItem}
@@ -37,6 +41,8 @@ export const CoursePreview = () => {
         <CoursePreviewItem
           key="2"
           itemIndex={2}
+          lessonName="03 / A first look at React"
+          totalNumberModuleTimeInHour={1.15}
           isOpened={openedCourseIndex === 2}
           closeCoursePreviewItem={closeCoursePreviewItem}
           openCoursePreviewItem={openCoursePreviewItem}

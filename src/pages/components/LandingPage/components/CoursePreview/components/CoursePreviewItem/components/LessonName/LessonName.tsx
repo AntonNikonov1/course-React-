@@ -8,11 +8,22 @@ import { CoursePreviewItemContext } from "../../CoursePreviewItem.context";
 import { ArrowTopIcon } from "components/Icons/ArrowTopIcon";
 
 export const CoursePreviewItemLessonName = () => {
-  const { containerRef, itemIndex, openCoursePreviewItem } = useContext(
-    CoursePreviewItemContext
-  );
+  const {
+    containerRef,
+    itemIndex,
+    openCoursePreviewItem,
+    lessonName,
+    totalNumberModuleTimeInHour,
+  } = useContext(CoursePreviewItemContext);
 
   const getCoursePreviewItemId = new GetCoursePreviewItemId(itemIndex);
+  const totalNumberModuleTimeInHourArray = totalNumberModuleTimeInHour
+    .toFixed(2)
+    .split(".");
+
+  const minutes = totalNumberModuleTimeInHourArray
+    .slice(1, totalNumberModuleTimeInHourArray.length)
+    .join("");
 
   const openCoursePreviewItemHandler = () => {
     openCoursePreviewItem(itemIndex);
@@ -31,12 +42,18 @@ export const CoursePreviewItemLessonName = () => {
 
   return (
     <div className={classes.lesson_name_container}>
-      <div
+      <p
         id={getCoursePreviewItemId.lessonNameId}
         className={classes.lesson_name}
       >
-        01 / Getting Started
-      </div>
+        {lessonName}
+      </p>
+      <p
+        id={getCoursePreviewItemId.lessonDurationId}
+        className={classes.lesson_duration}
+      >
+        3/9 {`${Math.floor(totalNumberModuleTimeInHour)}h ${minutes}m`}
+      </p>
 
       <ArrowTopIcon
         id={getCoursePreviewItemId.expandIconId}

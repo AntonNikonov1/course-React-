@@ -14,18 +14,17 @@ export const useCoursePreviewItemToggleAnimation = (
   const getCoursePreviewItemId = new GetCoursePreviewItemId(itemIndex);
 
   useEffect(() => {
-    const animationSetup = {
-      duration: COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION / 1000,
-      at: 0,
-    };
+    const duration = COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION / 1000;
+    const animationSetup = { duration, at: 0 };
 
     animate([
       [
         `#${getCoursePreviewItemId.moduleMarkId}`,
         {
+          position: isOpened ? "static" : "absolute",
           opacity: isOpened ? 1 : 0,
           transform: isOpened ? "scale(1)" : "scale(0)",
-          padding: isOpened ? "0 30px" : "0",
+          padding: isOpened ? "5px 30px" : "0",
           marginBottom: isOpened ? "40px" : "0",
         },
         animationSetup,
@@ -33,7 +32,7 @@ export const useCoursePreviewItemToggleAnimation = (
       [
         `#${getCoursePreviewItemId.lessonNavigationContainerId}`,
         {
-          height: isOpened ? "500px" : "0",
+          height: isOpened ? "auto" : "0",
           marginTop: isOpened ? "100px" : "0",
           opacity: isOpened ? 1 : 0,
         },
@@ -46,6 +45,14 @@ export const useCoursePreviewItemToggleAnimation = (
           left: isOpened ? "50%" : "0",
         },
         animationSetup,
+      ],
+      [
+        `#${getCoursePreviewItemId.lessonDurationId}`,
+        {
+          opacity: isOpened ? 0 : 1,
+          marginTop: isOpened ? "0" : "55px",
+        },
+        { ...animationSetup, duration: duration - 0.15 },
       ],
       [
         `#${getCoursePreviewItemId.expandIconId}`,
