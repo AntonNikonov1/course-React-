@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Text.module.scss";
 import { Grid } from "@mui/material";
 import { CourseIntroTextHeader } from "./components/Header/Header";

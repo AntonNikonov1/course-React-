@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import classes from "./LessonName.module.scss";
 import {
   COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION,

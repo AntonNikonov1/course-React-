@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import classes from "./CloseModuleButton.module.scss";
 import { ButtonComponent } from "components/Button/Button";
 import { ButtonComponentProps } from "components/Button/Button.interface";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import classes from "./LessonButton.module.scss";
 import { ButtonComponent } from "components/Button/Button";
 import { CheckboxComponent } from "components/Form/components/Checkbox/Checkbox";

@@ -1,4 +1,3 @@
-import React from "react";
 import { EducationIcon } from "components/Icons/EducationIcon";
 import { CourseCustomerFitItemProps } from "./components/CourseCustomerFitItem/CourseCustomerFitItem.props";
 

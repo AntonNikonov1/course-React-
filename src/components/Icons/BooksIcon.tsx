@@ -1,4 +1,3 @@
-import React from "react";
 import { IconComponentProps } from "./Icon.interface";
 import { LibraryBooks } from "@mui/icons-material";
 

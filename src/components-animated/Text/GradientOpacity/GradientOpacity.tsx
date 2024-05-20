@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import classes from "./GradientOpacity.module.scss";
 import { TextGradientOpacityProps } from "./GradientOpacity.interface";
 import { useScroll } from "framer-motion";

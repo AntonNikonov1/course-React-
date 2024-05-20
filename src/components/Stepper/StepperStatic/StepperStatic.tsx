@@ -1,4 +1,3 @@
-import React from "react";
 import { Stepper } from "@mui/material";
 import { StepperStaticItem } from "./components/StepperItem/StepperItem";
 import { StepperStaticComponentProps } from "./StepperStatic.interface";

@@ -1,4 +1,4 @@
-import React, { cloneElement } from "react";
+import { cloneElement } from "react";
 import classes from "./StepperItem.module.scss";
 import { Step, StepLabel } from "@mui/material";
 import { StepperStaticIndicator } from "../StepIndicator/StepIndicator";

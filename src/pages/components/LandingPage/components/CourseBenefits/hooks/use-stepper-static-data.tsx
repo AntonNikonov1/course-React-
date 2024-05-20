@@ -1,4 +1,3 @@
-import React from "react";
 import { PickValue } from "common/interface";
 import { StepperStaticComponentProps } from "components/Stepper/StepperStatic/StepperStatic.interface";
 import { EducationIcon } from "components/Icons/EducationIcon";

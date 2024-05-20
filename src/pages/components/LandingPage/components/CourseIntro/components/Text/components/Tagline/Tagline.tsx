@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Tagline.module.scss";
 import classNames from "classnames";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Checkbox.module.scss";
 import { CheckboxComponentProps } from "./Checkbox.interface";
 import { Checkbox } from "@mui/material";

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import classes from "./CoursePreview.module.scss";
 import { CoursePreviewItem } from "./components/CoursePreviewItem/CoursePreviewItem";
 

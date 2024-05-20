@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./CoursePriceItem.module.scss";
 import { ButtonComponent } from "components/Button/Button";
 import { CoursePriceItemProps } from "./CoursePriceItem.interface";

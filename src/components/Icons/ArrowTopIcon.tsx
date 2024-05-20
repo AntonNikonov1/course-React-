@@ -1,4 +1,3 @@
-import React from "react";
 import { IconComponentProps } from "./Icon.interface";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 

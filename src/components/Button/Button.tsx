@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Button.module.scss";
 import classNames from "classnames";
 import { ButtonComponentProps } from "./Button.interface";

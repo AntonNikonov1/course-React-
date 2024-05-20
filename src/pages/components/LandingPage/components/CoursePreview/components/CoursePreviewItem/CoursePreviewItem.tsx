@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./CoursePreviewItem.module.scss";
 import { CoursePreviewItemProps } from "./CoursePreviewItem.interface";
 import { CoursePreviewItemLessonNavigation } from "./components/LessonNavigation/LessonNavigation";

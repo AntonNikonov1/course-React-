@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./ExamButton.module.scss";
 import { ButtonComponent } from "components/Button/Button";
 import { BooksIcon } from "components/Icons/BooksIcon";

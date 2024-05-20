@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./LessonNavigation.module.scss";
 import { CoursePreviewLessonButton } from "../Buttons/LessonButton/LessonButton";
 import { ExamButton } from "../Buttons/ExamButton/ExamButton";

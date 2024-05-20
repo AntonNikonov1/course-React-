@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "../../GradientOpacity.module.scss";
 import { motion } from "framer-motion";
 import { GradientOpacityCharactersProps } from "./GradientOpacityCharacters.interface";

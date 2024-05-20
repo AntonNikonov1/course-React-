@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useUnauthorizedPages } from "./hooks/use-unauthorized-pages";
 

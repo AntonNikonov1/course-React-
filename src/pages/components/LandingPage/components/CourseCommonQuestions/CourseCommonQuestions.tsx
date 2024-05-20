@@ -1,4 +1,3 @@
-import React from "react";
 import { CourseCommonQuestionsItem } from "./components/CourseCommonQuestionsItem/CourseCommonQuestionsItem";
 
 export const CourseCommonQuestions = () => {

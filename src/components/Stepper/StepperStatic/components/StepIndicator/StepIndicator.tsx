@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./StepIndicator.module.scss";
 import { motion } from "framer-motion";
 import classNames from "classnames";

@@ -1,4 +1,4 @@
-import React, { cloneElement, useRef } from "react";
+import { cloneElement, useRef } from "react";
 import classes from "./CourseCustomerFitItem.module.scss";
 import { motion } from "framer-motion";
 import { CourseCustomerFitItemProps } from "./CourseCustomerFitItem.props";

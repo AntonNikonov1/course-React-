@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Name.module.scss";
 
 export const CourseIntroTextName = () => {

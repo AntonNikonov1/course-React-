@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./style.module.scss";
 import { CourseIntro } from "./components/CourseIntro/CourseIntro";
 import { CourseBenefits } from "./components/CourseBenefits/CourseBenefits";

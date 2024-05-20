@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./CourseBenefits.module.scss";
 import { StepperStaticComponent } from "components/Stepper/StepperStatic/StepperStatic";
 import { useStepperStaticData } from "./hooks/use-stepper-static-data";

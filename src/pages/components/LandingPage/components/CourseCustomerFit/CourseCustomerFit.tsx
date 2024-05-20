@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./CourseCustomerFit.module.scss";
 import { CourseCustomerFitItem } from "./components/CourseCustomerFitItem/CourseCustomerFitItem";
 import { courseCustomerFitSetup } from "./utils";

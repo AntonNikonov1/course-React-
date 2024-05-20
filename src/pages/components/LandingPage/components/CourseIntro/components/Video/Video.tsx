@@ -1,6 +1,3 @@
-import React from "react";
-import { Grid } from "@mui/material";
-
 export const CourseIntroVideo = () => {
   return (
     <div style={{ flex: 1 }}>

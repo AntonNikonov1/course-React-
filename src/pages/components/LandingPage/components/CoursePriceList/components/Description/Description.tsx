@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Description.module.scss";
 import classNames from "classnames";
 import { AuthorComment } from "components/AuthorComment/AuthorComment";
