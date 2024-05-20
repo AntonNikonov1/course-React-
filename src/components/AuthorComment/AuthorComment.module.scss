@@ -1,0 +1,32 @@
+$img-size: 75px;
+
+.container {
+  display: flex;
+  background: var(--inversion);
+  border-radius: 25px;
+  width: 675px;
+  padding: 25px;
+
+  .img {
+    width: $img-size;
+    min-width: $img-size;
+    height: $img-size;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    margin-right: 30px;
+  }
+
+  .name {
+    color: var(--main-bg);
+    font-size: 2.4em;
+    font-weight: var(--bold);
+  }
+
+  .author_comment {
+    color: var(--second-bg);
+    font-size: 2.2em;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+}
