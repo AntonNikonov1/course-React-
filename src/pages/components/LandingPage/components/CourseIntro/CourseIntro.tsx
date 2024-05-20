@@ -5,9 +5,9 @@ import { CourseIntroVideo } from "./components/Video/Video";
 
 export const CourseIntro = () => {
   return (
-    <div className={classes.container}>
+    <section className={classes.section}>
       <CourseIntroText />
       <CourseIntroVideo />
-    </div>
+    </section>
   );
 };

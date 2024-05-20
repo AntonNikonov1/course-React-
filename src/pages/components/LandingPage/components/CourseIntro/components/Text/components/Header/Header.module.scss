@@ -1,18 +1,18 @@
 .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 70px;
-}
+  margin-bottom: 7em;
 
-.name {
-  color: var(--third-text);
-  font-size: 2em;
-  font-weight: var(--medium);
-}
+  .name {
+    color: var(--third-text);
+    font-size: 2em;
+    font-weight: var(--medium);
+  }
 
-.description {
-  color: var(--inversion);
-  font-size: 2.4em;
-  font-weight: var(--bold);
-  margin-top: 20px;
+  .description {
+    color: var(--inversion);
+    font-size: 2.4em;
+    font-weight: var(--bold);
+    margin-top: 1em;
+  }
 }

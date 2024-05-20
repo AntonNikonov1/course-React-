@@ -1,6 +1,12 @@
-.container {
+@import "../../../../../assets/style/mixin/media.scss";
+
+.section {
   display: flex;
-  gap: 10px;
-  height: calc(100vh - 200px);
-  padding: 100px 0;
+  gap: 1em;
+  height: calc(100vh - 20em);
+  padding: 10em 0;
+
+  @include mediaQuery("xs") {
+    flex-direction: column;
+  }
 }

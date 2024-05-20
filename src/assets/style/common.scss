@@ -11,6 +11,15 @@ body {
   @include mediaQuery("xxl") {
     font-size: 6px;
   }
+  @include mediaQuery("xl") {
+    font-size: 5px;
+  }
+  @include mediaQuery("md") {
+    font-size: 4px;
+  }
+  @include mediaQuery("sm") {
+    font-size: 3px;
+  }
 }
 
 * {
