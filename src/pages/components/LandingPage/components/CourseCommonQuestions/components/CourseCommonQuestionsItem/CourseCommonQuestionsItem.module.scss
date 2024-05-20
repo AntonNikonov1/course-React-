@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 150px;
+  .question {
+    color: var(--inversion);
+    font-size: 4.4em;
+    font-weight: var(--semi-bold);
+    text-align: center;
+    width: 55%;
+    margin-bottom: 80px;
+  }
+}

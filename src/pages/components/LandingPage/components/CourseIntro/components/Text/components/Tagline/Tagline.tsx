@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Tagline.module.scss";
+import classNames from "classnames";
 
 export const CourseIntroTextTagline = () => {
   return (
@@ -7,7 +8,9 @@ export const CourseIntroTextTagline = () => {
       <span className={classes.tagline}>From&nbsp;</span>
       <span className={classes.bad_instance}>theory</span>
       <span className={classes.tagline}>&nbsp;to&nbsp;</span>
-      <span className={classes.good_instance}>practice</span>
+      <span className={classNames(classes.good_instance, "animated_underline")}>
+        practice
+      </span>
     </p>
   );
 };

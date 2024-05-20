@@ -16,7 +16,7 @@ export const CoursePreview = () => {
   };
 
   return (
-    <div style={{ paddingBottom: "500px" }}>
+    <div>
       <h2 className="title_section">Course Content</h2>
 
       <div className={classes.course_preview_container}>

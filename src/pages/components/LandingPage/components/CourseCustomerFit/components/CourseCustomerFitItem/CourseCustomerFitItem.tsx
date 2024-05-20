@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { CourseCustomerFitItemProps } from "./CourseCustomerFitItem.props";
 import { TextGradientOpacity } from "components-animated/Text/GradientOpacity/GradientOpacity";
 import { useScroll, useTransform } from "framer-motion";
+import classNames from "classnames";
 
 export const CourseCustomerFitItem = ({
   icon,
@@ -27,7 +28,7 @@ export const CourseCustomerFitItem = ({
     >
       {cloneElement(icon, { className: classes.icon })}
 
-      <p className="highlighted_text">{title}</p>
+      <p className={classNames(classes.title, "highlighted_text")}>{title}</p>
       <p className={classes.description}>
         <TextGradientOpacity text={description} />
       </p>

@@ -1,0 +1,22 @@
+.title {
+  background-image: url("../../../../../../../assets/images/text/green-glare.png");
+  background-position: 200%;
+  animation: title_glare_animation 3s infinite;
+  animation-delay: 3s;
+  margin-left: 15px;
+}
+
+@keyframes title_glare_animation {
+  0% {
+    background-position: 200%;
+  }
+  40% {
+    background-position: -100%;
+  }
+  99% {
+    background-position: -100%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}

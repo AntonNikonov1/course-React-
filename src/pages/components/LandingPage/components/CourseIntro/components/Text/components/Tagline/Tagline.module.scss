@@ -15,17 +15,9 @@
   }
 
   .good_instance {
-    color: var(--green);
     font-size: 5.8em;
-    font-weight: var(--bold);
-    text-decoration: underline;
     background-image: url("../../../../../../../../../../src/assets/images/text/green-glare.png");
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: -185px;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
+    background-position: -170px;
     animation: good_instance_glare_animation 3s infinite;
     animation-delay: 3s;
   }
