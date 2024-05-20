@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { AppRoutes } from "./pages/AppRoutes";
 
+import "./assets/style/animation/pulse-button.scss";
+
 import "./assets/style/variables/color.scss";
 import "./assets/style/variables/font-weight.scss";
 

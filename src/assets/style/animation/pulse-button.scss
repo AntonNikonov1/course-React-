@@ -1,0 +1,21 @@
+.pulse_button {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  box-shadow: 0 0 0 0 rgba(var(--blue-rgb), 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--blue-rgb), 1);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--blue-rgb), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 50px rgba(var(--blue-rgb), 0);
+  }
+}
