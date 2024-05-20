@@ -35,3 +35,14 @@ body {
   margin-bottom: 45px;
   text-align: center;
 }
+
+.animated_underline {
+  font-size: 1em;
+  font-weight: var(--bold);
+  text-decoration: underline;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: -20%;
+  color: transparent;
+  background-clip: text;
+}
