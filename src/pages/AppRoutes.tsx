@@ -5,7 +5,7 @@ export const AppRoutes = () => {
   const { unauthorizedPages } = useUnauthorizedPages();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="course-React-/">
       <Routes>
         {unauthorizedPages.map((routeProps) => (
           <Route key={routeProps.path} {...routeProps} />
