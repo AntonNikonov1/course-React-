@@ -9,6 +9,7 @@ export default defineConfig({
       common: "/src/common",
       components: "/src/components",
       "components-animated": "/src/components-animated",
+      utils: "/src/utils",
     },
   },
   css: {

@@ -23,7 +23,8 @@
     "paths": {
       "components/*": ["src/components/*"],
       "components-animated/*": ["src/components-animated/*"],
-      "common/*": ["src/common/*"]
+      "common/*": ["src/common/*"],
+      "utils/*": ["src/utils/*"]
     }
   },
   "include": ["src"],
