@@ -1,11 +1,16 @@
 $img-size: 75px;
+$img-size-xs: 35px;
 
 .container {
   display: flex;
   background: var(--inversion);
   border-radius: 25px;
-  width: 675px;
+  max-width: 60%;
   padding: 25px;
+
+  @include mediaQuery("xs") {
+    padding: 15px;
+  }
 
   .img {
     width: $img-size;
@@ -15,6 +20,13 @@ $img-size: 75px;
     background-position: center;
     background-size: contain;
     margin-right: 30px;
+
+    @include mediaQuery("xs") {
+      width: $img-size-xs;
+      min-width: $img-size-xs;
+      height: $img-size-xs;
+      margin-right: 15px;
+    }
   }
 
   .name {
@@ -28,5 +40,11 @@ $img-size: 75px;
     font-size: 2.2em;
     line-height: 25px;
     margin-top: 10px;
+
+    @include mediaQuery("xs") {
+      font-size: 2em;
+      line-height: 15px;
+      margin-top: 5px;
+    }
   }
 }

@@ -9,7 +9,7 @@ export const CoursePriceList = () => {
       <CoursePriceListTitle />
       <CoursePriceListDescription />
 
-      <div style={{ display: "flex", gap: "20px" }}>
+      <div className={classes.course_item_list}>
         <CoursePriceItem />
         <CoursePriceItem type="main" />
         <CoursePriceItem />

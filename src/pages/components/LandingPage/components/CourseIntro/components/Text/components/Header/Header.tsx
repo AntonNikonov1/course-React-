@@ -14,7 +14,7 @@ export const CourseIntroTextHeader = () => {
 };
 
 const HEADER_LIST = [
-  { name: "Income of students", description: "$800 - $10K/m" },
+  { name: "Income", description: "$1.2k - $10K/m" },
   { name: "Course hours", description: "160h" },
   { name: "Lessons", description: "22" },
 ];

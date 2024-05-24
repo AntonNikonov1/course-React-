@@ -6,9 +6,12 @@ import {
 } from "../../utils";
 import { CoursePreviewItemContext } from "../../CoursePreviewItem.context";
 import { ArrowTopIcon } from "components/Icons/ArrowTopIcon";
+import { getMediaBreakpoints } from "utils/media-breakpoints";
+import classNames from "classnames";
 
 export const CoursePreviewItemLessonName = () => {
   const {
+    isOpened,
     containerRef,
     itemIndex,
     openCoursePreviewItem,
@@ -34,17 +37,21 @@ export const CoursePreviewItemLessonName = () => {
       if (coursePreviewItemContainerNode) {
         coursePreviewItemContainerNode.scrollIntoView({
           behavior: "smooth",
-          block: "center",
+          block:
+            getMediaBreakpoints().breakPointValue === "xs" ? "start" : "center",
         });
       }
-    }, COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION);
+    }, COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION + 50);
   };
 
   return (
     <div className={classes.lesson_name_container}>
       <p
         id={getCoursePreviewItemId.lessonNameId}
-        className={classes.lesson_name}
+        className={classNames(
+          classes.lesson_name,
+          !isOpened && classes.compressed
+        )}
       >
         {lessonName}
       </p>

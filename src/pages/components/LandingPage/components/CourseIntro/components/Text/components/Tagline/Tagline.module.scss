@@ -1,36 +1,40 @@
 .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 1.7em 0;
+
+  @include mediaQuery("xs") {
+    margin: 1.4em 0;
+  }
 
   .tagline {
     color: var(--second-text);
-    font-size: 4.8em;
+    font-size: 3.8em;
     font-weight: var(--medium);
+
+    @include mediaQuery("xs") {
+      font-size: 3em;
+    }
+  }
+
+  .instance {
+    font-size: 4.8em;
+    font-weight: var(--bold);
+
+    @include mediaQuery("xs") {
+      font-size: 4em;
+    }
   }
 
   .bad_instance {
     color: var(--red);
-    font-size: 5.8em;
-    font-weight: var(--bold);
     text-decoration: line-through;
   }
 
   .good_instance {
-    font-size: 5.8em;
-    background-image: url("../../../../../../../../../../src/assets/images/text/green-glare.png");
-    background-position: -170px;
-    animation: good_instance_glare_animation 3s infinite;
-    animation-delay: 3s;
-  }
-}
-
-@keyframes good_instance_glare_animation {
-  0% {
-    background-position: -170px;
-  }
-  40% {
-    background-position: 25px;
-  }
-  100% {
-    background-position: 25px;
+    color: var(--green);
+    font-weight: var(--bold);
+    text-decoration: underline;
   }
 }

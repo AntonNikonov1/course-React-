@@ -2,11 +2,12 @@
 
 .section {
   display: flex;
-  gap: 1em;
-  height: calc(100vh - 20em);
+  gap: 2em;
+  min-height: calc(100vh - 20em);
   padding: 10em 0;
 
   @include mediaQuery("xs") {
     flex-direction: column;
+    padding-bottom: 0;
   }
 }

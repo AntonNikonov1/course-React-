@@ -2,6 +2,7 @@ import { useAnimate } from "framer-motion";
 import { useEffect } from "react";
 import {
   COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION,
+  CoursePreviewItemAnimation,
   GetCoursePreviewItemId,
 } from "../utils";
 
@@ -12,6 +13,7 @@ export const useCoursePreviewItemToggleAnimation = (
   const [containerRef, animate] = useAnimate();
 
   const getCoursePreviewItemId = new GetCoursePreviewItemId(itemIndex);
+  const coursePreviewItemAnimation = new CoursePreviewItemAnimation(isOpened);
 
   useEffect(() => {
     const duration = COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION / 1000;
@@ -25,7 +27,7 @@ export const useCoursePreviewItemToggleAnimation = (
           opacity: isOpened ? 1 : 0,
           transform: isOpened ? "scale(1)" : "scale(0)",
           padding: isOpened ? "5px 30px" : "0",
-          marginBottom: isOpened ? "40px" : "0",
+          marginBottom: coursePreviewItemAnimation.getModuleMarkMargin(),
         },
         animationSetup,
       ],
@@ -33,7 +35,8 @@ export const useCoursePreviewItemToggleAnimation = (
         `#${getCoursePreviewItemId.lessonNavigationContainerId}`,
         {
           height: isOpened ? "auto" : "0",
-          marginTop: isOpened ? "100px" : "0",
+          margin:
+            coursePreviewItemAnimation.getLessonNavigationContainerMargin(),
           opacity: isOpened ? 1 : 0,
         },
         animationSetup,
@@ -41,6 +44,7 @@ export const useCoursePreviewItemToggleAnimation = (
       [
         `#${getCoursePreviewItemId.lessonNameId}`,
         {
+          width: isOpened ? "100%" : "auto",
           transform: isOpened ? "translateX(-50%)" : "translateX(0)",
           left: isOpened ? "50%" : "0",
         },
@@ -50,7 +54,7 @@ export const useCoursePreviewItemToggleAnimation = (
         `#${getCoursePreviewItemId.lessonDurationId}`,
         {
           opacity: isOpened ? 0 : 1,
-          marginTop: isOpened ? "0" : "55px",
+          margin: coursePreviewItemAnimation.getLessonDurationMargin(),
         },
         { ...animationSetup, duration: duration - 0.15 },
       ],
@@ -58,7 +62,7 @@ export const useCoursePreviewItemToggleAnimation = (
         `#${getCoursePreviewItemId.expandIconId}`,
         {
           opacity: isOpened ? 0 : 1,
-          height: isOpened ? "0px" : "auto",
+          height: isOpened ? "0px" : "38px",
         },
         animationSetup,
       ],

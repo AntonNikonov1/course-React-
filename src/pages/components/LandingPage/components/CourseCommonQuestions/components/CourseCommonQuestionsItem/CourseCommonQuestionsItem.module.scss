@@ -4,6 +4,11 @@
   align-items: center;
   width: 100%;
   margin-bottom: 150px;
+
+  @include mediaQuery("xs") {
+    margin-bottom: 35px;
+  }
+
   .question {
     color: var(--inversion);
     font-size: 4.4em;
@@ -11,5 +16,16 @@
     text-align: center;
     width: 55%;
     margin-bottom: 80px;
+
+    @include mediaQuery("xs") {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .answer {
+    @include mediaQuery("xs") {
+      max-width: 90%;
+    }
   }
 }

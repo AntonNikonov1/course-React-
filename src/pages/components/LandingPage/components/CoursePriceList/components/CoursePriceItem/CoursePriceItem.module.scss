@@ -14,6 +14,11 @@
   border-top-right-radius: 70px;
   background: var(--blue);
   height: 90px;
+
+  @include mediaQuery("xs") {
+    top: 25px;
+    font-size: 2em;
+  }
 }
 
 .container {
@@ -24,6 +29,11 @@
   padding: 45px;
   margin-top: 100px;
 
+  @include mediaQuery("xs") {
+    padding: 25px;
+    margin-top: 20px;
+  }
+
   .price_name {
     font-size: 2.2em;
     font-weight: var(--semi-bold);
@@ -33,6 +43,11 @@
     border-color: var(--main-bg) !important;
     border-radius: 35px;
     padding: 30px;
+
+    @include mediaQuery("xs") {
+      font-size: 2em;
+      padding: 15px;
+    }
   }
 
   .price {
@@ -40,6 +55,11 @@
     font-weight: var(--bold);
     text-align: center;
     margin: 45px 0;
+
+    @include mediaQuery("xs") {
+      font-size: 6.5em;
+      margin: 20px 0;
+    }
   }
 
   .advantage {
@@ -49,6 +69,11 @@
     text-align: center;
     width: 80%;
     margin: 15px auto 0;
+
+    @include mediaQuery("xs") {
+      font-size: 2em;
+      margin: 5px auto 0;
+    }
   }
 
   .action_button {
@@ -56,12 +81,20 @@
     text-transform: none !important;
     background-color: var(--main-bg) !important;
     margin-top: 45px;
+
+    @include mediaQuery("xs") {
+      margin-top: 25px;
+    }
   }
 }
 
 .container_main {
   border: 6px solid var(--blue);
   z-index: 1;
+
+  @include mediaQuery("xs") {
+    margin-top: 60px;
+  }
 
   .action_button {
     background-color: var(--blue) !important;

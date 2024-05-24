@@ -1,5 +1,4 @@
 import classes from "./Text.module.scss";
-import { Grid } from "@mui/material";
 import { CourseIntroTextHeader } from "./components/Header/Header";
 import { CourseIntroTextName } from "./components/Name/Name";
 import { CourseIntroTextTagline } from "./components/Tagline/Tagline";
@@ -21,14 +20,10 @@ export const CourseIntroText = () => {
         </p>
       </div>
 
-      <Grid container columns={2} columnSpacing={2}>
-        <Grid item xs={1}>
-          <ButtonComponent ui="primary">More about tariffs</ButtonComponent>
-        </Grid>
-        <Grid item xs={1}>
-          <ButtonComponent>Modules and Lessons</ButtonComponent>
-        </Grid>
-      </Grid>
+      <div className={classes.action_container}>
+        <ButtonComponent ui="primary">More about tariffs</ButtonComponent>
+        <ButtonComponent>Modules and Lessons</ButtonComponent>
+      </div>
     </div>
   );
 };

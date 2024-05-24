@@ -20,24 +20,44 @@
       path {
         fill: var(--inversion);
       }
+
+      @include mediaQuery("xs") {
+        display: none;
+      }
     }
 
     .label_content_container {
       width: 65%;
 
+      @include mediaQuery("xs") {
+        width: 100%;
+      }
+
       .title {
         color: var(--inversion);
         font-size: 6.1em;
         font-weight: var(--bold);
+        hyphens: auto;
         line-height: normal;
         text-align: start;
-        margin-top: -15px;
+        margin-top: -0.05em;
         margin-left: -5px;
+
+        @include mediaQuery("xs") {
+          font-size: 2.4em;
+          margin-top: 0.2em;
+          margin-left: 0;
+        }
       }
       .description {
         color: var(--inversion);
         font-size: 1.8em;
         text-align: start;
+
+        @include mediaQuery("xs") {
+          font-size: 1.2em;
+          margin-top: 0.5em;
+        }
       }
     }
   }

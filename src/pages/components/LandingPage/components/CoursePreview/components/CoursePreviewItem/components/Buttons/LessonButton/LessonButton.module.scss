@@ -1,9 +1,10 @@
 .container {
   font-weight: var(--semi-bold);
+  line-height: normal !important;
+  text-align: left;
   background: transparent !important;
   border: 2px solid var(--main-bg) !important;
   margin-bottom: 10px !important;
-  border-radius: 30px !important;
   justify-content: flex-start !important;
   padding: 10px !important;
 

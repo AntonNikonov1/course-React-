@@ -1,3 +1,17 @@
 .section {
   margin: 300px 0;
+
+  @include mediaQuery("xs") {
+    margin: 70px 0;
+  }
+
+  .course_item_list {
+    display: flex;
+    gap: 20px;
+
+    @include mediaQuery("xs") {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
 }

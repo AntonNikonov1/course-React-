@@ -3,35 +3,75 @@
   margin-top: 150px;
   margin-bottom: 50px;
 
+  @include mediaQuery("xs") {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
   .handwriting_down_arrow {
     position: absolute;
     top: 0;
     left: 150px;
     background-image: url("../../../../../../../assets/images/handwriting/down_arrow.png");
+    background-position: center;
     background-repeat: no-repeat;
     height: 500px;
     width: 550px;
+
+    @include mediaQuery("xs") {
+      display: none;
+    }
   }
 
   .content_container {
     width: 75%;
     margin-left: 35%;
 
+    @include mediaQuery("xs") {
+      width: 100%;
+      margin-left: 0;
+    }
+
     .description {
       color: var(--inversion);
       font-size: 5.8em;
 
+      @include mediaQuery("xs") {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 3.8em;
+        line-height: 30px;
+        text-align: center;
+      }
+
       .highlighted_text {
         font-size: 1em;
+
+        @include mediaQuery("xs") {
+          margin-left: 5px;
+        }
       }
     }
     .description_down {
+      display: block;
       margin-left: 60px;
+
+      @include mediaQuery("xs") {
+        display: inline;
+        margin-left: 5px;
+      }
     }
 
     .author_comment {
-      margin-top: 150px;
+      margin-top: 50px;
       margin-left: 20%;
+
+      @include mediaQuery("xs") {
+        max-width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+      }
     }
   }
 }

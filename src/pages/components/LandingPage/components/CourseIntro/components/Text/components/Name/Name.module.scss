@@ -4,8 +4,12 @@
 
   .title {
     color: var(--inversion);
-    font-size: 11em;
+    font-size: 9em;
     font-weight: var(--bold);
+
+    @include mediaQuery("xs") {
+      font-size: 6em;
+    }
   }
 
   .course_version {

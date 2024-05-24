@@ -3,6 +3,10 @@
   justify-content: space-between;
   margin-bottom: 7em;
 
+  @include mediaQuery("xs") {
+    margin-bottom: 5em;
+  }
+
   .name {
     color: var(--third-text);
     font-size: 2em;
@@ -11,8 +15,13 @@
 
   .description {
     color: var(--inversion);
-    font-size: 2.4em;
+    font-size: 2.8em;
     font-weight: var(--bold);
     margin-top: 1em;
+
+    @include mediaQuery("xs") {
+      font-size: 2em;
+      margin-top: 0.65em;
+    }
   }
 }

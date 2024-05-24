@@ -1,7 +1,12 @@
 .container {
   position: relative;
   height: 500px;
-  margin-right: 50px;
+  margin-right: 5em;
+
+  @include mediaQuery("xs") {
+    margin-right: 1.5em;
+    height: 300px;
+  }
 
   .indicator {
     display: flex;
@@ -24,7 +29,7 @@
 
   .divider {
     position: relative;
-    height: 94.5%;
+    height: 85%;
     width: 6px;
     background-color: var(--inversion);
     margin: 10px auto 0;

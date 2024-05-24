@@ -32,14 +32,7 @@ export const CoursePreviewItem = (props: CoursePreviewItemProps) => {
           id={getCoursePreviewItemId.lessonNavigationContainerId}
           className={classes.lesson_container}
         >
-          <div
-            style={{
-              background: "grey",
-              flex: 0.6,
-              height: "500px",
-              borderRadius: "40px",
-            }}
-          />
+          <div className={classes.lesson_video} />
 
           <CoursePreviewItemLessonNavigation />
         </div>

@@ -7,6 +7,12 @@
   .button_navigation {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2em;
+
+    @include mediaQuery("xs") {
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 3.5em;
+    }
   }
 }
