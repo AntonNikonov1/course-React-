@@ -9,7 +9,7 @@ export const TextGradientOpacity = ({ text }: TextGradientOpacityProps) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 0.9", "start 0.45"],
+    offset: ["start 0.9", "start 0.55"],
   });
 
   const words = text.split(" ");
