@@ -1,6 +1,7 @@
 .lesson_name_container {
   position: relative;
   display: flex;
+  align-items: center;
   width: 100%;
 
   .expand_icon {
@@ -14,25 +15,29 @@
   .lesson_name {
     position: absolute;
     top: 0;
-    font-size: 6em;
-    font-weight: var(--semi-bold);
-    text-align: center;
+    color: var(--main-bg);
+    width: max-content;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     margin-right: auto;
 
-    @include mediaQuery("xs") {
-      font-size: 4em;
-    }
-
     &.compressed {
-      @include mediaQuery("xs") {
-        font-size: 3em;
+      font-size: 4em !important;
+
+      @include mediaQuery("sm") {
+        font-size: 3em !important;
       }
     }
   }
 
   .lesson_duration {
     font-size: 2em;
-    color: var(--main-bh);
-    font-weight: var(--semi-bold);
+    color: var(--second-bg);
+
+    @include mediaQuery("sm") {
+      font-size: 1.8em;
+    }
   }
 }

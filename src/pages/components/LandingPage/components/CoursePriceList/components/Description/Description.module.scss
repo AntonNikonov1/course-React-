@@ -1,16 +1,15 @@
 .container {
   position: relative;
-  margin-top: 150px;
-  margin-bottom: 50px;
+  margin: 70px 0 50px;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("lg") {
     margin-top: 30px;
     margin-bottom: 20px;
   }
 
   .handwriting_down_arrow {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 150px;
     background-image: url("../../../../../../../assets/images/handwriting/down_arrow.png");
     background-position: center;
@@ -18,37 +17,42 @@
     height: 500px;
     width: 550px;
 
-    @include mediaQuery("xs") {
+    @include mediaQuery("lg") {
       display: none;
     }
   }
 
   .content_container {
-    width: 75%;
-    margin-left: 35%;
+    width: 60%;
+    margin-left: 40%;
 
-    @include mediaQuery("xs") {
+    @include mediaQuery("lg") {
       width: 100%;
       margin-left: 0;
     }
 
     .description {
       color: var(--inversion);
-      font-size: 5.8em;
+      font-weight: normal;
+      font-size: 5em;
+      text-align: center;
 
-      @include mediaQuery("xs") {
+      @include mediaQuery("sm") {
+        font-size: 3.2em;
+        line-height: 30px;
+      }
+
+      @include mediaQuery("sm") {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-wrap: wrap;
-        font-size: 3.8em;
-        line-height: 30px;
-        text-align: center;
       }
 
       .highlighted_text {
         font-size: 1em;
 
-        @include mediaQuery("xs") {
+        @include mediaQuery("sm") {
           margin-left: 5px;
         }
       }
@@ -57,20 +61,25 @@
       display: block;
       margin-left: 60px;
 
-      @include mediaQuery("xs") {
+      @include mediaQuery("lg") {
         display: inline;
         margin-left: 5px;
       }
     }
 
     .author_comment {
-      margin-top: 50px;
+      margin-top: 60px;
       margin-left: 20%;
 
-      @include mediaQuery("xs") {
+      @include mediaQuery("lg") {
         max-width: 100%;
-        margin-top: 50px;
-        margin-left: 0;
+        margin: 30px auto 0;
+        width: 65%;
+      }
+
+      @include mediaQuery("xs") {
+        width: 92%;
+        margin: 30px 0;
       }
     }
   }

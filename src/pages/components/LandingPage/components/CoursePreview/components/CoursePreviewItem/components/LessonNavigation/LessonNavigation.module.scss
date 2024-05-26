@@ -9,6 +9,10 @@
     justify-content: space-between;
     gap: 2em;
 
+    @include mediaQuery("lg") {
+      margin-top: 5em;
+    }
+
     @include mediaQuery("xs") {
       flex-direction: column;
       gap: 1em;

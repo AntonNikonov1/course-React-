@@ -3,7 +3,7 @@
   height: 500px;
   margin-right: 5em;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("sm") {
     margin-right: 1.5em;
     height: 300px;
   }

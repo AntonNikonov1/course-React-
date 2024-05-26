@@ -5,13 +5,13 @@ export const getMediaBreakpoints = () => {
     576: "xs",
     768: "sm",
     992: "md",
-    1200: "xs",
+    1200: "lg",
     1400: "xl",
     1600: "xxl",
     1800: "xxxl",
   } as const;
 
-  let breakPointValue = "xs" as ValueOf<typeof mapping>;
+  let breakPointValue = "sm" as ValueOf<typeof mapping>;
 
   Object.entries(mapping).map(([key, value]) => {
     if (+key < window.screen.width) {

@@ -16,14 +16,14 @@ export const CoursePreview = () => {
   };
 
   return (
-    <div>
-      <h2 className="title_section">Course Content</h2>
+    <section>
+      <h2 className="title-section">Course Content</h2>
 
       <div className={classes.course_preview_container}>
         <CoursePreviewItem
           key="0"
           itemIndex={0}
-          lessonName="01 / Getting Started"
+          lessonName="Getting Started"
           totalNumberModuleTimeInHour={1.5}
           isOpened={openedCourseIndex === 0}
           closeCoursePreviewItem={closeCoursePreviewItem}
@@ -32,7 +32,7 @@ export const CoursePreview = () => {
         <CoursePreviewItem
           key="1"
           itemIndex={1}
-          lessonName="02 / React vs Vanilla JS"
+          lessonName="React vs Vanilla JS"
           totalNumberModuleTimeInHour={1.25}
           isOpened={openedCourseIndex === 1}
           closeCoursePreviewItem={closeCoursePreviewItem}
@@ -41,13 +41,13 @@ export const CoursePreview = () => {
         <CoursePreviewItem
           key="2"
           itemIndex={2}
-          lessonName="03 / A first look at React"
+          lessonName="A first look at React"
           totalNumberModuleTimeInHour={1.15}
           isOpened={openedCourseIndex === 2}
           closeCoursePreviewItem={closeCoursePreviewItem}
           openCoursePreviewItem={openCoursePreviewItem}
         />
       </div>
-    </div>
+    </section>
   );
 };

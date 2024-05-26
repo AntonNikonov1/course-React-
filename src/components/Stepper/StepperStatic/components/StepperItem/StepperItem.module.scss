@@ -13,15 +13,16 @@
     align-items: flex-start;
     justify-content: space-between;
     height: 100%;
+    font-size: 1em;
 
     .icon {
       width: 25%;
-      font-size: 200px;
+      font-size: 150px;
       path {
         fill: var(--inversion);
       }
 
-      @include mediaQuery("xs") {
+      @include mediaQuery("sm") {
         display: none;
       }
     }
@@ -29,33 +30,22 @@
     .label_content_container {
       width: 65%;
 
-      @include mediaQuery("xs") {
+      @include mediaQuery("sm") {
         width: 100%;
       }
 
       .title {
-        color: var(--inversion);
-        font-size: 6.1em;
-        font-weight: var(--bold);
         hyphens: auto;
-        line-height: normal;
-        text-align: start;
         margin-top: -0.05em;
         margin-left: -5px;
 
-        @include mediaQuery("xs") {
-          font-size: 2.4em;
+        @include mediaQuery("sm") {
           margin-top: 0.2em;
           margin-left: 0;
         }
       }
       .description {
-        color: var(--inversion);
-        font-size: 1.8em;
-        text-align: start;
-
-        @include mediaQuery("xs") {
-          font-size: 1.2em;
+        @include mediaQuery("sm") {
           margin-top: 0.5em;
         }
       }

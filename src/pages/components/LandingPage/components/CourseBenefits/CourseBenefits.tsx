@@ -5,8 +5,8 @@ import { useStepperStaticData } from "./hooks/use-stepper-static-data";
 export const CourseBenefits = () => {
   const { stepperStaticData } = useStepperStaticData();
   return (
-    <div className={classes.container}>
+    <section className={classes.container}>
       <StepperStaticComponent data={stepperStaticData} />
-    </div>
+    </section>
   );
 };

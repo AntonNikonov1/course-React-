@@ -6,8 +6,9 @@
   min-height: calc(100vh - 20em);
   padding: 10em 0;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("lg") {
     flex-direction: column;
+    padding-top: 8vw;
     padding-bottom: 0;
   }
 }

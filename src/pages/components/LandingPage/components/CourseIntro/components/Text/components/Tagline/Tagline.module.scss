@@ -4,25 +4,25 @@
   flex-wrap: wrap;
   margin: 1.7em 0;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("sm") {
     margin: 1.4em 0;
   }
 
   .tagline {
     color: var(--second-text);
-    font-size: 3.8em;
+    font-size: 3.7em;
     font-weight: var(--medium);
 
-    @include mediaQuery("xs") {
+    @include mediaQuery("sm") {
       font-size: 3em;
     }
   }
 
   .instance {
-    font-size: 4.8em;
+    font-size: 4.5em;
     font-weight: var(--bold);
 
-    @include mediaQuery("xs") {
+    @include mediaQuery("sm") {
       font-size: 4em;
     }
   }

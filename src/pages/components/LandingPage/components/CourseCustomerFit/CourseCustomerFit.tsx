@@ -4,10 +4,10 @@ import { courseCustomerFitSetup } from "./utils";
 
 export const CourseCustomerFit = () => {
   return (
-    <div className={classes.container}>
+    <section className={classes.container}>
       {courseCustomerFitSetup.map((item, index) => (
         <CourseCustomerFitItem key={index} {...item} />
       ))}
-    </div>
+    </section>
   );
 };

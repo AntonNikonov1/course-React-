@@ -2,13 +2,13 @@
   background-color: var(--main-bg);
   padding-bottom: 20em;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("sm") {
     padding-bottom: 2em;
   }
 
   .content {
     width: 90vw;
-    max-width: 1700px;
+    max-width: 1400px;
     margin: 0px auto;
   }
 }

@@ -3,6 +3,7 @@ import classes from "./StepperItem.module.scss";
 import { Step, StepLabel } from "@mui/material";
 import { StepperStaticIndicator } from "../StepIndicator/StepIndicator";
 import { StepperStaticItemProps } from "./StepperItem.interface";
+import classNames from "classnames";
 
 export const StepperStaticItem = ({
   name,
@@ -22,8 +23,10 @@ export const StepperStaticItem = ({
           StepIconComponent={(props) => <StepperStaticIndicator {...props} />}
         >
           <div className={classes.label_content_container}>
-            <p className={classes.title}>{name}</p>
-            <p className={classes.description}>{description}</p>
+            <p className={classNames("title", classes.title)}>{name}</p>
+            <p className={classNames("description", classes.description)}>
+              {description}
+            </p>
           </div>
 
           {cloneElement(icon, { className: classes.icon })}

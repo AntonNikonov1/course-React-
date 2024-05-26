@@ -28,8 +28,10 @@ export const CourseCustomerFitItem = ({
     >
       {cloneElement(icon, { className: classes.icon })}
 
-      <p className={classNames(classes.title, "highlighted_text")}>{title}</p>
-      <p className={classes.description}>
+      <p className={classNames("title", "highlighted_text", classes.title)}>
+        {title}
+      </p>
+      <p className={classNames("description", classes.description)}>
         <TextGradientOpacity text={description} />
       </p>
     </motion.div>

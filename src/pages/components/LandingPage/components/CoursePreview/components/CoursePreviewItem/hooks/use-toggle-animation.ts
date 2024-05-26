@@ -26,7 +26,7 @@ export const useCoursePreviewItemToggleAnimation = (
           position: isOpened ? "static" : "absolute",
           opacity: isOpened ? 1 : 0,
           transform: isOpened ? "scale(1)" : "scale(0)",
-          padding: isOpened ? "5px 30px" : "0",
+          padding: isOpened ? "5px 25px" : "0",
           marginBottom: coursePreviewItemAnimation.getModuleMarkMargin(),
         },
         animationSetup,
@@ -44,7 +44,6 @@ export const useCoursePreviewItemToggleAnimation = (
       [
         `#${getCoursePreviewItemId.lessonNameId}`,
         {
-          width: isOpened ? "100%" : "auto",
           transform: isOpened ? "translateX(-50%)" : "translateX(0)",
           left: isOpened ? "50%" : "0",
         },

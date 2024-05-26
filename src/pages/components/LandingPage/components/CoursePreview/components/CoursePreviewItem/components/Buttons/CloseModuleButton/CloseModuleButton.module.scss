@@ -1,4 +1,8 @@
 .button {
   flex: 0.5;
   border-radius: 32px !important;
+
+  @include mediaQuery("lg") {
+    flex: 0.3;
+  }
 }

@@ -4,11 +4,11 @@
 
   .title {
     color: var(--inversion);
-    font-size: 9em;
+    font-size: 8.5em;
     font-weight: var(--bold);
 
-    @include mediaQuery("xs") {
-      font-size: 6em;
+    @include mediaQuery("sm") {
+      font-size: 5em;
     }
   }
 
@@ -18,7 +18,7 @@
     right: 0;
     transform: translate(100%, -70%) rotate(15deg);
     color: var(--inversion);
-    font-size: 2.4em;
+    font-size: 2em;
     font-weight: var(--bold);
     background-color: var(--blue);
     border-radius: 192px;

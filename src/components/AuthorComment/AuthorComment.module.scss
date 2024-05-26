@@ -8,7 +8,7 @@ $img-size-xs: 35px;
   max-width: 60%;
   padding: 25px;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("sm") {
     padding: 15px;
   }
 
@@ -21,7 +21,7 @@ $img-size-xs: 35px;
     background-size: contain;
     margin-right: 30px;
 
-    @include mediaQuery("xs") {
+    @include mediaQuery("sm") {
       width: $img-size-xs;
       min-width: $img-size-xs;
       height: $img-size-xs;
@@ -41,7 +41,7 @@ $img-size-xs: 35px;
     line-height: 25px;
     margin-top: 10px;
 
-    @include mediaQuery("xs") {
+    @include mediaQuery("sm") {
       font-size: 2em;
       line-height: 15px;
       margin-top: 5px;

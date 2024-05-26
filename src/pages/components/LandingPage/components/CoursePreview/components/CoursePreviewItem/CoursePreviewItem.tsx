@@ -23,7 +23,7 @@ export const CoursePreviewItem = (props: CoursePreviewItemProps) => {
           id={getCoursePreviewItemId.moduleMarkId}
           className={classes.module_mark}
         >
-          1 Module
+          {itemIndex + 1} Module
         </div>
 
         <CoursePreviewItemLessonName />

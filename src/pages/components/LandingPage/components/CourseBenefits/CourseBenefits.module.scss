@@ -1,7 +1,7 @@
 .container {
   margin: 100px 0 200px;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("sm") {
     margin: 70px 0 30px;
   }
 }

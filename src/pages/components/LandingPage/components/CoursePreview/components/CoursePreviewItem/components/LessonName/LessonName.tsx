@@ -37,8 +37,11 @@ export const CoursePreviewItemLessonName = () => {
       if (coursePreviewItemContainerNode) {
         coursePreviewItemContainerNode.scrollIntoView({
           behavior: "smooth",
-          block:
-            getMediaBreakpoints().breakPointValue === "xs" ? "start" : "center",
+          block: ["sm", "sm", "md", "lg"].includes(
+            getMediaBreakpoints().breakPointValue
+          )
+            ? "start"
+            : "center",
         });
       }
     }, COURSE_PREVIEW_ITEM_OPEN_ANIMATION_DURATION + 50);
@@ -49,6 +52,7 @@ export const CoursePreviewItemLessonName = () => {
       <p
         id={getCoursePreviewItemId.lessonNameId}
         className={classNames(
+          "secondary-title",
           classes.lesson_name,
           !isOpened && classes.compressed
         )}
@@ -59,7 +63,7 @@ export const CoursePreviewItemLessonName = () => {
         id={getCoursePreviewItemId.lessonDurationId}
         className={classes.lesson_duration}
       >
-        3/9 {`${Math.floor(totalNumberModuleTimeInHour)}h ${minutes}m`}
+        {`${Math.floor(totalNumberModuleTimeInHour)}h ${minutes}m`}
       </p>
 
       <ArrowTopIcon

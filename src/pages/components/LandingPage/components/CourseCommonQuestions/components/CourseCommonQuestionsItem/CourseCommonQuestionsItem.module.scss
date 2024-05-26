@@ -5,7 +5,7 @@
   width: 100%;
   margin-bottom: 150px;
 
-  @include mediaQuery("xs") {
+  @include mediaQuery("sm") {
     margin-bottom: 35px;
   }
 
@@ -17,14 +17,14 @@
     width: 55%;
     margin-bottom: 80px;
 
-    @include mediaQuery("xs") {
+    @include mediaQuery("sm") {
       width: 100%;
       margin-bottom: 20px;
     }
   }
 
   .answer {
-    @include mediaQuery("xs") {
+    @include mediaQuery("sm") {
       max-width: 90%;
     }
   }

@@ -2,10 +2,10 @@ import { CourseCommonQuestionsItem } from "./components/CourseCommonQuestionsIte
 
 export const CourseCommonQuestions = () => {
   return (
-    <div>
+    <section>
       <CourseCommonQuestionsItem />
       <CourseCommonQuestionsItem />
       <CourseCommonQuestionsItem />
-    </div>
+    </section>
   );
 };

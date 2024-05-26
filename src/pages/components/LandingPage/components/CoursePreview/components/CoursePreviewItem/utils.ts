@@ -31,11 +31,11 @@ export class CoursePreviewItemAnimation {
       return "0";
     }
 
-    if (this.breakPointValue === "xs") {
-      return "20px";
+    if (this.breakPointValue === "sm") {
+      return "10px";
     }
 
-    return "40px";
+    return "25px";
   };
 
   getLessonNavigationContainerMargin = () => {
@@ -43,11 +43,11 @@ export class CoursePreviewItemAnimation {
       return "0";
     }
 
-    if (this.breakPointValue === "xs") {
-      return "30px 0 0";
+    if (this.breakPointValue === "sm") {
+      return "45px 0 0";
     }
 
-    return "100px 0 0";
+    return "60px 0 0";
   };
 
   getLessonDurationMargin = () => {
@@ -55,11 +55,11 @@ export class CoursePreviewItemAnimation {
       return "0";
     }
 
-    if (this.breakPointValue === "xs") {
-      return "25px 0 0";
+    if (this.breakPointValue === "sm") {
+      return "28px 0 0";
     }
 
-    return "55px 0 0";
+    return "35px 0 0";
   };
 }
 
